@@ -9,22 +9,22 @@ def interpret_line(line):
     return "new"
 
 def read_from_stdin():
-    # Process the lines to group intentions
-    intention_list = []
-    current_intention = ""
+    # Process the lines to group slides
+    slide_list = []
+    current_slide = ""
     
     for line in sys.stdin:
         match interpret_line(line):
             case "new":
-                if current_intention:
-                    intention_list.append(current_intention)
-                current_intention = line
+                if current_slide:
+                    slide_list.append(current_slide)
+                current_slide = line
             case "append":
-                current_intention += "\n" + line
-    if current_intention:  # Add the last intention if any
-        intention_list.append(current_intention)
+                current_slide += "\n" + line
+    if current_slide:  # Add the last slide if any
+        slide_list.append(current_slide)
 
-    return intention_list
+    return slide_list
 
 def wrap_text(text, font, max_width):
     """Wrap the text to fit within the specified width."""
@@ -112,6 +112,29 @@ def main():
     pygame.quit()
     sys.exit()
 
+def interpret_command_line():
+    if len(sys.argv) > 1 and sys.argv[1] == '-h':
+        return "help"
+
+    return "read_stdin"
 
 if __name__ == "__main__":
+    match interpret_command_line():
+        case "help":
+            print("""Usage: script.py [OPTION]
+Reads slideshow notes from stdin and displays it.
+
+Options:
+-h    Display this help and exit
+
+Examples:
+python run.py < slides/seminario.txt
+cat slides/seminario.txt | python run.py
+
+Note: The script expects slideshow notes in a specific format. Top-level slides should start without
+leading spaces, while lines with leading spaces are considered as continuations of the previous slide.
+"""
+            )
+            sys.exit()
+
     main()
