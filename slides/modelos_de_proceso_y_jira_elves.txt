@@ -1,0 +1,109 @@
+Modelos de Proceso y JiraElves
+    - 7 de octubre, Focus
+
+- Agradecimiento 
+- Introducción mía 
+- Contexto del proyecto
+    - Producto
+        - Desktop app and software tools
+        - Pre PMF
+        - User-centered design
+        - Visión clara, roadmap a largo plazo claro
+        - Roadmap a corto-mediano plazo mutante según prioridades que van apareciendo
+    - Contrato time and materials
+    - Cliente que sabe delegar responsabilidades
+    - Disneylandia
+- (En algún nivel de abstracción…) La matriz es random.
+    - Darle lugar al random es dejarse de lado. Dejar-se, dejar-al-ser, de lado
+    - Al sacarse uno del medio, fluye el Tao
+- Nuestra praxis consiste en fabricar máquinas materiales y lógicas
+    - (Lógicas = operan en un nivel de abstracción diferente)
+    - Requiere realizar actividades de manufactura 
+    - Requiere coordinar estas actividades 
+- Qué es un modelo de proceso?
+    - Es un acuerdo en la representación de la coordinación de actividades que se realizan durante un proyecto en desarrollo, entre los involucrados (stakeholders internos y externos)
+        - Cada involucrado tiene una perspectiva de la coordinación de actividades
+- No hay UN modelo válido 
+    - El modelo debe adaptarse al input de la realidad
+    - Debe acordarse un upgrade del modelo
+        - Retros
+        - Los modelos se versionan
+- Tipos de contrato
+    - Time and materials
+    - Fixed price
+    - …
+- Tipos de modelo
+    - Waterfall
+    - Agile
+        - Scrum
+        - Kanban
+        - Extreme Programming
+- Audiencias (del proceso)
+    - Cliente
+    - Developers
+    - Operations (internal)
+- Perspectiva del cliente
+    - Negocio
+    - Maximizar ingreso
+    - Economizar esfuerzo
+    - Dónde estoy?
+    - A dónde voy?
+    - Cuánto falta?
+- Perspectiva del developer
+    - Reward: ticket approved and merged
+    - Minimizar incertidumbres en un ticket, tener claro lo que hay que hacer
+    - Minimizar meetings
+- Perspectiva de operaciones
+    - Maximizar billable time
+    - Anticipar acciones
+    - Gestión de riesgos
+    - Detectar oportunidades de upsales
+- Orden y equilibrio son conceptos ortogonales
+    - Un proyecto puede tener una entropía alta y aún así estar equilibrado.
+    - Un proyecto puede tener una entropía baja y estar desequilibrado.
+    - Entropía = medida del nivel de incertidumbre o complejidad en un proyecto.
+- Beneficios de tener un proceso modelado
+    - Ordena la coordinación de acciones
+    - Facilita la comunicación del estado de la fabricación
+    - Predictibilidad
+- BMC process model
+    - Pain-driven
+    - Orientado a objetivos
+    - Coordinación basada en comandas / tickets
+    - Scrum
+        - 2-week sprints
+    - Code-review based
+    - Sesiones de pair programming 
+    - Retros espontáneas y planificadas
+    - Debe servir / ser útil a las audiencias
+        - Ponerse en el lugar
+    - Lazy project manager philosophy 
+        - Automatizar todo lo que incomoda hacer de forma manual
+    - Redundancia de contexto
+        - Contexto en cada ticket
+    - Trazabilidad de features y pedidos
+    - Automatización del build workflow en GitHub
+    - Mantener actualizado al cliente de manera oportuna
+        - Desde daily hasta weekly update
+- Next step
+    - Process agreement en el team agreement
+    - Coordinar la coordinación de actividades 
+    - Automatización progresiva de partes del proceso
+    - Versionar cambios 
+- Demo JiraElves
+    - Comunicación
+        - Expand issues
+        - List releases
+    - Gestión
+        - Caladriel
+            - Crea ticket descriptions según el acuerdo del proceso
+            - Master of Lore: Keeper of the tribe's ancient history, legends, and songs.
+- Futuro JiraElves
+    - Integrar nuevos elfos:
+        - Faelana
+            - Comunicar resumen de estado al 
+            - Beast Tamer: Communicates and forms bonds with mystical creatures, using them to aid the tribe.
+        - Miriel
+            -  Seer: With the gift of foresight, she advises the council on potential threats.
+        - Thranduil
+            - Tribal Chief: The wise and just leader of the tribe, guiding them towards prosperity.
