@@ -2,6 +2,11 @@
 
 A repository meant to store slide notes for further reference.
 
+# Licensing
+
+- The slide notes in this repository are licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0) DEED](https://creativecommons.org/licenses/by/4.0/).
+- The `show.py` script is open-source and can be used without any restrictions.
+
 ## Folder Structure
 
 ```plaintext
