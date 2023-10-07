@@ -128,8 +128,8 @@ Options:
 -h    Display this help and exit
 
 Examples:
-python run.py < slides/seminario.txt
-cat slides/seminario.txt | python run.py
+python show.py < slides/seminario.txt
+cat slides/seminario.txt | python show.py
 
 Note: The script expects slideshow notes in a specific format. Top-level slides should start without
 leading spaces, while lines with leading spaces are considered as continuations of the previous slide.
